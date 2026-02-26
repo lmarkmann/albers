@@ -357,7 +357,7 @@ def report_palette(
             tc = swatch_text_color(hex_val)
             preview = Text(
                 "██",
-                style=Style(bgcolor=hex_clean, color=tc),
+                style=Style(bgcolor=f"#{hex_clean}", color=tc),
             )
 
             ui_table.add_row(
@@ -405,7 +405,7 @@ def report_palette(
             tc = swatch_text_color(hex_val)
             preview = Text(
                 "██",
-                style=Style(bgcolor=hex_clean, color=tc),
+                style=Style(bgcolor=f"#{hex_clean}", color=tc),
             )
 
             scopes_preview = ", ".join(d["used_by"][:2])
