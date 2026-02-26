@@ -1,4 +1,8 @@
-"""Color harmony relationship analysis."""
+"""Color harmony relationship analysis.
+
+Albers observed that colors placed next to each other create relationships
+the eye cannot ignore. This module names those relationships.
+"""
 
 
 def analyze_harmony(hues: list[float]) -> dict:

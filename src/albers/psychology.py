@@ -1,4 +1,7 @@
-"""Color psychology and emotional response mapping."""
+"""Color psychology and emotional response mapping.
+
+"One and the same color evokes innumerable readings." — Josef Albers
+"""
 
 from .conversions import color_temperature
 
