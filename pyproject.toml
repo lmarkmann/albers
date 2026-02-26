@@ -1,6 +1,6 @@
 [project]
 name = "albers"
-version = "0.2.3"
+version = "0.2.4"
 description = "Color analysis for theme palettes: harmony, contrast, and perceptual metrics."
 readme = "README.md"
 license = { text = "MIT" }

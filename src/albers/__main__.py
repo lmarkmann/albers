@@ -24,6 +24,7 @@ app = typer.Typer(
     name="albers",
     help="Color analysis — harmony, contrast, and perceptual metrics for theme palettes.",
     add_completion=False,
+    invoke_without_command=True,
 )
 console = Console()
 
@@ -49,6 +50,7 @@ def _load_and_validate_themes() -> dict[str, dict]:
 
 @app.callback()
 def main_callback(
+    ctx: typer.Context,
     themes_dir: Annotated[
         Path | None,
         typer.Option(
@@ -63,6 +65,8 @@ def main_callback(
     global _themes_dir
     _themes_dir = themes_dir
     print_banner(console)
+    if ctx.invoked_subcommand is None:
+        typer.echo(ctx.get_help())
 
 
 @app.command("palette")
