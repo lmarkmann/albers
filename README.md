@@ -1,6 +1,8 @@
-# albers - Color Analysis Package
+# albers
 
-Color analysis for theme palettes: harmony, contrast, and perceptual metrics.
+![albers banner](./banner.svg)
+
+Color analysis for theme palettes — harmony, contrast, and perceptual metrics.
 
 Named after Josef Albers, whose *Interaction of Color* (1963) showed that color
 is never perceived in isolation, always relative to its context.
